@@ -1,5 +1,10 @@
 # understands moduluses of 3, 5 and 15
 class Fizzbuzz
+
+  FIZZ =      3
+  BUZZ =      5
+  FIZZBUZZ =  15
+
   def fizzbuzz(num)
     return "fizzbuzz" if is_fizzbuzz?(num)
     return "fizz" if is_fizz?(num)
@@ -10,15 +15,15 @@ class Fizzbuzz
   private
 
   def is_fizz?(num)
-    num % 3 == 0
+    num % FIZZ == 0
   end
 
   def is_buzz?(num)
-    num % 5 == 0
+    num % BUZZ == 0
   end
 
   def is_fizzbuzz?(num)
-    num % 15 == 0
+    num % FIZZBUZZ == 0
   end
 
 end
