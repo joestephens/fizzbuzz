@@ -1,16 +1,28 @@
 require 'fizzbuzz'
 
-describe 'fizzbuzz' do
+describe Fizzbuzz do
+
   it 'returns "fizz" when pass 3' do
-    expect(fizzbuzz(3)).to eq 'fizz'
+    num = 3
+    fb = subject.fizzbuzz(num)
+    expect(fb).to eq 'fizz'
   end
+
   it 'returns "buzz" when pass 5' do
-    expect(fizzbuzz(5)).to eq 'buzz'
-  end
+    num = 5
+    fb = subject.fizzbuzz(num)
+    expect(fb).to eq 'buzz'  end
+
   it 'returns 4 when passed 4' do
-    expect(fizzbuzz(4)).to eq '4'
+    num = 4
+    fb = subject.fizzbuzz(num)
+    expect(fb).to eq '4'
   end
+
   it 'returns "fizzbuzz" when passed 15' do
-    expect(fizzbuzz(15)).to eq 'fizzbuzz'
+    num = 15
+    fb = subject.fizzbuzz(num)
+    expect(fb).to eq 'fizzbuzz'
   end
+
 end
